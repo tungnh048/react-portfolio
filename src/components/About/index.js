@@ -7,6 +7,7 @@ import CLogo from '../../assets/images/c-logo.png'
 import CPlusPlusLogo from '../../assets/images/cplusplus-logo.png'
 import CSharpLogo from '../../assets/images/csharp-logo.png'
 import ReactLogo from '../../assets/images/react-logo.png'
+import Loader from 'react-loaders'
 
 const About = () => {
     
@@ -19,6 +20,7 @@ const About = () => {
     }, [])
 
     return (
+        <>
         <div className="container about-page">
             <div className="text-zone">
                 <h1>
@@ -93,6 +95,8 @@ const About = () => {
                 </div>
             </div>
         </div>
+            <Loader type="pacman" />
+        </>
     )
 }
 
