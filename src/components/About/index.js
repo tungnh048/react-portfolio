@@ -36,7 +36,7 @@ const About = () => {
                     on challenging and diverse projects.
                 </p>
                 <p>
-                    Check confident in my ability to adapt to most situations, always curious to learn more, dependable as a worker 
+                    I am confident in my ability to adapt to most situations, always curious to learn more, dependable as a worker 
                     and always try to improve myself one step at a time.
                 </p>
                 <p> If I have to describe myself in 3 words, those will be: </p>
