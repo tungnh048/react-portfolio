@@ -3,6 +3,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import emailjs from '@emailjs/browser'
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
 const Contact = () => {
 
@@ -73,6 +74,25 @@ const Contact = () => {
                             </ul>
                         </form>
                     </div>
+                </div>
+                <div className='info-map'>
+                    Hoang Tung "Bill" Nguyen,
+                    <br/>
+                    Canada
+                    <br/>
+                    19 Viewmount Drive
+                    <br/>
+                    Ottawa
+                    <br/>
+                    <span>tungnh048@gmail.com</span>
+                </div>
+                <div className='map-wrap'>
+                    <MapContainer center={[45.342839256424746, -75.74542365295109]} zoom={13}>
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <Marker position={[45.342839256424746, -75.74542365295109]}>
+                            <Popup>Tung Nguyen lives here</Popup>
+                        </Marker>
+                    </MapContainer>
                 </div>
             </div>
             <Loader type="pacman" />
