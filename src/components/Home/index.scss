@@ -59,6 +59,12 @@
         animation: fadeIn 1s 1.8s backwards;
     }
 
+    .preview {
+        width: 400px;
+        height: 200px;
+        opacity: 0%;
+    }
+
     .flat-button {
         color: #ffd700;
         font-size: 13px;
@@ -72,6 +78,7 @@
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
+        margin-right: 10px;
 
         &:hover {
             background: #ffd700;

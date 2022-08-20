@@ -3,6 +3,7 @@ import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-s.png';
 import AnimatedLetters from '../AnimatedLetters';
+import ProfilePic from '../../assets/images/pfp.jpg'
 import './index.scss';
 import Logo from './Logo';
 
@@ -36,6 +37,8 @@ const Home = () => {
                 </h1>
                 <h2>Backend Developer / Frontend Developer / Database Engineer / Post-grad Student</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+                <img className='preview' src={ProfilePic} alt="My face"/>
+                <Link to="/files/Resume.pdf" className='flat-button' target="_blank" download>RÉSUMÉ</Link> 
             </div> 
             <Logo />
         </div>
